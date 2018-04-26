@@ -9,6 +9,11 @@ Vue.use(Vuex);
 let store = new Vuex.Store({
 	state:{
 		count: 110 //定义一个状态
+	},
+	mutations:{
+		updateCount: function(state,payload){
+			state.count += payload.add;
+		}
 	}
 });
 
