@@ -1,8 +1,7 @@
 <template>
 	<div>		
-		<div>hello，一起学习Vue</div>
-		<p>{{msg}}</p>
-		<p>0</p>
+		<h2>hello，一起学习Vue</h2>
+		<p>{{n}}</p>
 	</div>
 </template>
 
@@ -10,12 +9,12 @@
 export default {
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      n: this.$store.state.count //n的初始值从vuex的state中拿
     }
   }
 }
 </script>
 
 <style scoped>
-	div{ font-size: 30px;}
+
 </style>

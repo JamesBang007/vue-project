@@ -7,7 +7,9 @@ Vue.use(Vuex);
 //定义 store 容器
 
 let store = new Vuex.Store({
-
+	state:{
+		count: 110 //定义一个状态
+	}
 });
 
 //把实例报出去

@@ -1,6 +1,6 @@
 <template>
 	<div>
 		<h2>我是miaov组件</h2>
-		<p>0</p>
+		<p>{{$store.state.count}}</p>
 	</div>	
 </template>
