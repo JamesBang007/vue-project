@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <!--<router-view/>-->
+    <hello></hello>
   </div>
 </template>
 
 <script>
+//使用组件三部曲：引入组件、注册组件、使用组件
+import Hello from './components/hello'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+  	Hello:Hello
+  }
 }
 </script>
 
