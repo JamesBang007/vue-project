@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <router-view/>
+    <!--<router-view/>-->
+    <hello></hello>
+    <miaov></miaov>
   </div>
 </template>
 
 <script>
 //使用组件三部曲：引入组件、注册组件、使用组件
-
+import Hello from './components/hello'
+import miaov from './components/miaov'
 
 export default {
   name: 'App',
   components:{
-  	
+  	Hello:Hello,
+  	miaov:miaov
   }
 }
 </script>
