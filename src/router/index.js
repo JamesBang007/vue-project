@@ -22,10 +22,10 @@ Vue.use(VuePreview, {
 import HelloWorld from '@/components/HelloWorld'
 import login from '../components/login'
 import home from '../components/home'
- //图片预览插件
+//图片预览插件
 import preview from '../components/VuePreview.vue'
 import preview2 from '../components/VuePreview.vue'
-import imageview from '../components/vueImageview.vue'
+//import imageview from '../components/vueImageview.vue'
 
 
 
@@ -42,7 +42,7 @@ export default new Router({
       name: '登录',
       component: login
     },
-    {    	
+    {
     	// 动态路径参数 以冒号开头
       path: '/home/:user',
       name: '主页',
@@ -58,13 +58,13 @@ export default new Router({
       name: '图片预览插件',
       component: preview2
     },
-    {
-      path: '/imageview',
-      name: '图片预览插件',
-      component: imageview
-    },
-    
-    
-    
-  ]  
+//  {
+//    path: '/imageview',
+//    name: '图片预览插件',
+//    component: imageview
+//  },
+
+
+
+  ]
 })
